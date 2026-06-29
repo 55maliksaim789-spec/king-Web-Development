@@ -1,0 +1,461 @@
+/* CSS Variables for Colors */
+:root {
+    --primary-color: #070a14; /* Custom dark background */
+    --secondary-color: #000000; /* Pure Black for cards and forms */
+    --accent-color: #0070F3; /* Electric Blue */
+    --success-color: #00E676; /* Neon Green */
+    --text-light: #FFFFFF;
+    --text-muted: #a0aec0;
+    --border-color: #1A202C;
+    --input-bg: #0f1424;
+    
+    /* Developer Section Special Blue Theme */
+    --blue-section-bg: #001233; 
+    --blue-input-bg: #00225c;
+    --blue-border: #00358a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    line-height: 1.6;
+    transition: direction 0.3s ease;
+}
+
+/* RTL/Urdu Specific Adjustments */
+body.rtl {
+    direction: rtl;
+}
+
+body.rtl nav ul li {
+    margin-left: 0;
+    margin-right: 20px;
+}
+
+body.rtl .form-group, body.rtl .modal-content, body.rtl .team-card {
+    text-align: right;
+}
+
+body.rtl .team-badge {
+    margin-right: 0;
+    margin-left: 8px;
+}
+
+/* Navbar */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(7, 10, 20, 0.95);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+    z-index: 1000;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.nav-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--text-light);
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo span { color: var(--accent-color); }
+.logo-icon { font-size: 26px; color: var(--accent-color); }
+
+nav ul { display: flex; list-style: none; }
+nav ul li { margin-left: 20px; }
+nav ul li a {
+    text-decoration: none;
+    color: var(--text-light);
+    font-weight: 500;
+    transition: color 0.3s;
+}
+nav ul li a:hover { color: var(--accent-color); }
+
+.lang-btn {
+    background: var(--accent-color);
+    color: white;
+    border: none;
+    padding: 6px 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/* Sections Universal Style */
+section {
+    padding: 120px 20px;
+    max-width: 1100px;
+    margin: 60px auto;
+}
+
+.section-title {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+    color: var(--text-light);
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: var(--accent-color);
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.content-side { flex: 1; }
+.image-side { flex: 1; display: flex; justify-content: center; align-items: center; }
+.image-side img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    border: 1px solid var(--border-color);
+}
+
+/* Hero Section */
+#home {
+    min-height: 100vh;
+    margin-top: 0;
+    background: radial-gradient(circle at top right, #002b5c, transparent);
+}
+
+.hero-content h1 { font-size: 48px; margin-bottom: 20px; font-weight: 800; line-height: 1.2; }
+.hero-content h1 span { color: var(--accent-color); }
+.hero-content p { font-size: 18px; color: var(--text-muted); margin-bottom: 35px; }
+
+.btn {
+    display: inline-block;
+    padding: 14px 35px;
+    background-color: var(--accent-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: background 0.3s, transform 0.2s;
+    box-shadow: 0 4px 14px rgba(0, 112, 243, 0.4);
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover { background-color: #0056b3; transform: translateY(-2px); }
+.btn-alt { background-color: #FFFFFF; color: var(--accent-color); }
+.btn-alt:hover { background-color: #e6e6e6; }
+
+/* Services Section Grid */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.service-card {
+    background: var(--secondary-color);
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+}
+.service-card img { width: 100%; height: 200px; object-fit: cover; }
+.service-card-content { padding: 25px; }
+
+/* Team Section Grid Styling */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.team-card {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 30px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.team-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: var(--accent-color);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.team-card:hover::before {
+    opacity: 1;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(0, 112, 243, 0.4);
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.team-card h3 {
+    font-size: 22px;
+    color: var(--text-light);
+    margin-bottom: 5px;
+}
+
+.team-role {
+    font-size: 14px;
+    color: var(--accent-color);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.team-desc {
+    font-size: 15px;
+    color: var(--text-muted);
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.team-badges-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.team-badge {
+    background: rgba(0, 112, 243, 0.1);
+    color: #70b5ff;
+    border: 1px solid rgba(0, 112, 243, 0.2);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+/* Order Form Section */
+#order-form-section {
+    background-color: var(--secondary-color);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+}
+
+.form-group { text-align: left; margin-bottom: 20px; }
+.form-group label { display: block; margin-bottom: 8px; color: var(--text-muted); font-size: 14px; }
+.form-group input, .form-group select, .form-group textarea {
+    width: 100%; padding: 14px; background-color: var(--input-bg);
+    border: 1px solid var(--border-color); border-radius: 6px; color: var(--text-light); font-size: 16px;
+}
+
+/* Specific Style for File Upload Input */
+.form-group input[type="file"] {
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Standalone Payment Gateway Section */
+#payment-methods-section {
+    background: linear-gradient(135deg, #090d1a, #02040a);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+}
+
+.payment-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.payment-card {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.payment-card:hover {
+    border-color: var(--success-color);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 230, 118, 0.1);
+}
+
+.payment-icon { font-size: 40px; margin-bottom: 15px; display: block; }
+.payment-card h3 { font-size: 20px; margin-bottom: 10px; }
+.payment-card p { font-size: 14px; color: var(--text-muted); margin-bottom: 20px; }
+
+.btn-pay-now {
+    background-color: var(--success-color);
+    color: #000000;
+    padding: 10px 25px;
+    font-size: 15px;
+    width: 100%;
+}
+.btn-pay-now:hover { background-color: #00b359; }
+
+/* Dynamic Payment Modal Window */
+.payment-modal {
+    display: none;
+    position: fixed;
+    z-index: 3000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.modal-content {
+    background-color: #0f1424;
+    border: 2px solid var(--accent-color);
+    padding: 35px;
+    border-radius: 12px;
+    max-width: 450px;
+    width: 100%;
+    box-shadow: 0 10px 30px rgba(0, 112, 243, 0.3);
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.modal-header {
+    font-size: 22px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Brand Wallet Logo Box */
+.wallet-logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    background: rgba(255, 255, 255, 0.03);
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+}
+
+.wallet-logo-img {
+    max-height: 45px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+/* Dynamic Real-time Calculation Display Panel */
+.price-summary-panel {
+    background: rgba(0, 112, 243, 0.08);
+    border: 1px dashed var(--accent-color);
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.price-line {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price-line.total {
+    font-weight: bold;
+    color: var(--success-color);
+    font-size: 17px;
+}
+
+.modal-body {
+    margin-bottom: 25px;
+}
+
+.modal-footer {
+    display: flex;
+    gap: 15px;
+}
+
+/* Developer Section */
+#join-developer-section {
+    background-color: var(--blue-section-bg);
+    border: 1px solid var(--blue-border);
+    border-radius: 16px;
+}
+#join-developer-section .form-group input, 
+#join-developer-section .form-group select, 
+#join-developer-section .form-group textarea {
+    background-color: var(--blue-input-bg); border: 1px solid var(--blue-border);
+}
+
+/* Footer */
+footer { text-align: center; padding: 30px; color: var(--text-muted); border-top: 1px solid var(--border-color); }
+
+@media (max-width: 768px) {
+    .flex-container { flex-direction: column; text-align: center; }
+    nav ul { display: none; }
+    .nav-container { flex-direction: column; gap: 10px; }
+}
+.float-whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #25d366;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+    z-index: 1000;
+    transition: transform 0.3s;
+  }
+  
+  .float-whatsapp img {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .float-whatsapp:hover {
+    transform: scale(1.1);
+  }

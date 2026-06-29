@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development | Premium Agency Services</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <div class="logo" id="logo-text"><span class="logo-icon">🌐</span>Web <span>Development</span></div>
+            <div style="display: flex; align-items: center; gap: 15px;">
+                <nav>
+                    <ul>
+                        <li><a href="#home" id="nav-home">Home</a></li>
+                        <li><a href="#about" id="nav-about">About Agency</a></li>
+                        <li><a href="#services" id="nav-services">Services</a></li>
+                        <li><a href="#team-section" id="nav-team">Our Team</a></li>
+                        <li><a href="#order-form-section" id="nav-order">Place Order</a></li>
+                        <li><a href="#payment-methods-section" id="nav-pay-nav">Online Payment</a></li>
+                        <li><a href="#join-developer-section" id="nav-join">Join Us</a></li>
+                        <a href="tel:03290726117" class="font-semibold text-white-600 hover:underline" style="color: white;">
+                            📞 0329-0726117
+                          </a>
+                    </ul>
+                </nav>
+                <button class="lang-btn" id="lang-toggle" onclick="toggleLanguage()">اردو</button>
+            </div>
+        </div>
+    </header>
+
+    <section id="home" class="flex-container">
+        <div class="content-side hero-content">
+            <h1 id="hero-title">We Build <span>Premium</span> Websites For Your Business</h1>
+            <p id="hero-desc">We bring your brand into the digital world. Custom web development services with clean code, fast loading speeds, and excellent UI/UX.</p>
+            <a href="#order-form-section" class="btn" id="hero-btn">Order Now</a>
+        </div>
+        <div class="image-side">
+            <img src="https://images.unsplash.com/photo-1547082299-de196ea013d6?q=80&w=600&auto=format&fit=crop" alt="Web Workspace">
+        </div>
+    </section>
+
+    <section id="about" class="flex-container">
+        <div class="image-side">
+            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=600&auto=format&fit=crop" alt="Team Work">
+        </div>
+        <div class="content-side about-text">
+            <h2 style="margin-bottom: 20px;" id="about-title">About Our Agency</h2>
+            <h3 id="about-sub1">Who We Are</h3>
+            <p id="about-p1">We are a modern web development agency that helps businesses and startups grow online.</p>
+            <h3 id="about-sub2">Our Core Features</h3>
+            <p id="about-f1">⚡ Super Fast Loading: Optimized code to ensure your website loads instantly.</p>
+            <p id="about-f2">📱 100% Responsive: Flawless layout and design on Mobile and Tablet screens.</p>
+            <p id="about-f3">🔒 Secure & Safe: Development according to modern security standards.</p>
+        </div>
+    </section>
+
+    <section id="services">
+        <h2 class="section-title" id="services-title">Our Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=500&auto=format&fit=crop" alt="Coding">
+                <div class="service-card-content">
+                    <h3 id="s1-title">Custom Web Development</h3>
+                    <p id="s1-desc">Tailored high-performance websites built using HTML, CSS, JavaScript, or React.</p>
+                </div>
+            </div>
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1563013544-824ae1d704d3?q=80&w=500&auto=format&fit=crop" alt="E-commerce">
+                <div class="service-card-content">
+                    <h3 id="s2-title">E-Commerce Stores</h3>
+                    <p id="s2-desc">Beautiful online shops integrated with secure payment gateways.</p>
+                </div>
+            </div>
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=500&auto=format&fit=crop" alt="Maintenance">
+                <div class="service-card-content">
+                    <h3 id="s3-title">Website Maintenance</h3>
+                    <p id="s3-desc">Our responsibility is redesigning old websites and boosting load speeds.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="team-section">
+        <h2 class="section-title" id="team-title">Our Expert Team</h2>
+        <div class="team-grid">
+            <div class="team-card">
+                <h3 id="tm1-name">Mushahid Hussain</h3>
+                <div class="team-role" id="tm1-role">CTO & System Architect</div>
+                <p class="team-desc" id="tm1-desc">Handles cloud environments, systems orchestration, and core Next.js/React technical roadmaps with extreme performance guarantees.</p>
+                <div class="team-badges-container">
+                    <span class="team-badge">React Core</span>
+                    <span class="team-badge">Cloud Systems</span>
+                    <span class="team-badge">Lead Architect</span>
+                </div>
+            </div>
+            <div class="team-card">
+                <h3 id="tm2-name">Bilal Shakoor</h3>
+                <div class="team-role" id="tm2-role">Senior Full-Stack Engineer</div>
+                <p class="team-desc" id="tm2-desc">Builds bulletproof REST APIs, secured customer endpoints, local JSON session tools, and database relational architectures.</p>
+                <div class="team-badges-container">
+                    <span class="team-badge">Node / CJS</span>
+                    <span class="team-badge">API Security</span>
+                    <span class="team-badge">Backend Lead</span>
+                </div>
+            </div>
+            <div class="team-card">
+                <h3 id="tm3-name">Abdullah Shahnawaz</h3>
+                <div class="team-role" id="tm3-role">Lead UI/UX Designer</div>
+                <p class="team-desc" id="tm3-desc">Sculpts stunning custom color palettes, minimalist typography hierarchies, fluid micro-interactions, and high-fidelity mockups.</p>
+                <div class="team-badges-container">
+                    <span class="team-badge">Figma / Vect</span>
+                    <span class="team-badge">Interactive UX</span>
+                    <span class="team-badge">Product Design</span>
+                </div>
+            </div>
+            <div class="team-card">
+                <h3 id="tm4-name">Ahtasham Javed</h3>
+                <div class="team-role" id="tm4-role">Database & DevOps Specialist</div>
+                <p class="team-desc" id="tm4-desc">Oversees database performance triggers, custom security rulesets, Dockerized deployment states, and automated code testing pipelines.</p>
+                <div class="team-badges-container">
+                    <span class="team-badge">Postgres / SQL</span>
+                    <span class="team-badge">CI-CD / Dev</span>
+                    <span class="team-badge">DevOps Specialist</span>
+                </div>
+            </div>
+            <div class="team-card">
+                <h3 id="tm5-name">Asad Shahnawaz</h3>
+                <div class="team-role" id="tm5-role">Frontend & SEO Architect</div>
+                <p class="team-desc" id="tm5-desc">Optimizes responsive touch layouts, image compressions, tag configurations, and delivers flawless PageSpeed score rankings.</p>
+                <div class="team-badges-container">
+                    <span class="team-badge">SEO Schema</span>
+                    <span class="team-badge">Web Vitals</span>
+                    <span class="team-badge">Frontend SEO</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="order-form-section" class="flex-container">
+        <div class="content-side form-container">
+            <h2 style="margin-bottom: 20px;" id="order-title">Online Order Form</h2>
+            <form id="client-form" onsubmit="handleOrderSubmit(event)">
+                <div class="form-group">
+                    <label for="name" id="l-name">Full Name *</label>
+                    <input type="text" id="name" placeholder="Enter your full name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email" id="l-email">Email Address *</label>
+                    <input type="email" id="email" placeholder="Enter your email address" required>
+                </div>
+                <div class="form-group">
+                    <label for="whatsapp" id="l-phone">WhatsApp Number *</label>
+                    <input type="tel" id="whatsapp" placeholder="e.g. 03290725117" required>
+                </div>
+                <div class="form-group">
+                    <label for="service-type" id="l-service">Select Service *</label>
+                    <select id="service-type" required>
+                        <option value="" disabled selected id="opt-select">Select a service</option>
+                        <option value="Custom Web Development" id="opt-1">Custom Web Development</option>
+                        <option value="E-Commerce Online Store" id="opt-2">E-Commerce Online Store</option>
+                        <option value="Website Maintenance" id="opt-3">Website Maintenance</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="details" id="l-details">Project Details / Requirements *</label>
+                    <textarea id="details" placeholder="What features do you need in your website? Type details here..." required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="order-screenshot" id="l-order-shot">Attach Project Reference Screenshot (Optional)</label>
+                    <input type="file" id="order-screenshot" accept="image/*">
+                </div>
+                <button type="submit" class="btn" style="width: 100%; margin-top: 10px;" id="order-btn">Submit Order</button>
+            </form>
+        </div>
+        <div class="image-side">
+            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=600&auto=format&fit=crop" alt="Contract Form">
+        </div>
+    </section>
+
+    <section id="payment-methods-section">
+        <h2 class="section-title" id="p-sec-title">Quick Online Payment</h2>
+        <p style="text-align: center; color: var(--text-muted); margin-top: -20px;" id="p-sec-desc">Select your preferred instant gateway to clear invoices or advance project payments.</p>
+        
+        <div class="payment-grid">
+            <div class="payment-card">
+                <span class="payment-icon">💳</span>
+                <h3 id="card-h">Credit / Debit Card</h3>
+                <p id="card-p">Pay securely using your Visa, MasterCard, or UnionPay instantly.</p>
+                <button class="btn btn-pay-now" id="card-b" onclick="openPaymentGateway('card')">Pay with Card</button>
+            </div>
+            <div class="payment-card">
+                <span class="payment-icon">📱</span>
+                <h3 id="mobile-h">EasyPaisa / JazzCash</h3>
+                <p id="mobile-p">Quick mobile wallet checkout via registered Pakistan mobile accounts.</p>
+                <button class="btn btn-pay-now" id="mobile-b" onclick="openPaymentGateway('wallet')">Pay with Mobile Wallet</button>
+            </div>
+            <div class="payment-card">
+                <span class="payment-icon">🏛️</span>
+                <h3 id="bank-h">Direct Bank Transfer</h3>
+                <p id="bank-p">Wire payment directly into our official corporate local bank account.</p>
+                <button class="btn btn-pay-now" id="bank-b" onclick="openPaymentGateway('bank')">Pay with Bank</button>
+            </div>
+        </div>
+    </section>
+
+    <div id="js-payment-modal" class="payment-modal">
+        <div class="modal-content">
+            <div class="modal-header" id="modal-title-text">Secure Checkout</div>
+            <form id="gateway-form" onsubmit="processJavaScriptPayment(event)">
+                <div class="modal-body" id="dynamic-modal-fields">
+                    </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn" style="background-color: var(--success-color); color: #000; flex: 1;" id="modal-confirm-btn">Confirm Payment</button>
+                    <button type="button" class="btn btn-alt" style="flex: 1;" id="modal-cancel-btn" onclick="closePaymentGateway()">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <section id="join-developer-section" class="flex-container">
+        <div class="image-side">
+            <img src="https://images.unsplash.com/photo-1607799279861-4dd421887fb3?q=80&w=600&auto=format&fit=crop" alt="Developer Workspace">
+        </div>
+        <div class="content-side form-container">
+            <h2 style="margin-bottom: 20px;" id="dev-title">Join As Developer</h2>
+            <p style="color: var(--text-muted); margin-bottom: 20px;" id="dev-desc">Become part of our team! Submit your professional details below.</p>
+            <form id="dev-form" onsubmit="handleDevSubmit(event)">
+                <div class="form-group">
+                    <label for="dev-name" id="ld-name">Your Name *</label>
+                    <input type="text" id="dev-name" placeholder="Enter your full name" required>
+                </div>
+                <div class="form-group">
+                    <label for="dev-cnic" id="ld-cnic">CNIC Number *</label>
+                    <input type="text" id="dev-cnic" placeholder="XXXXX-XXXXXXX-X" maxlength="15" oninput="formatCNIC(this)" required>
+                </div>
+                <div class="form-group">
+                    <label for="dev-email" id="ld-email">Email *</label>
+                    <input type="email" id="dev-email" placeholder="Enter your active email address" required>
+                </div>
+                <div class="form-group">
+                    <label for="dev-skills" id="ld-skills">Primary Skills *</label>
+                    <select id="dev-skills" required>
+                        <option value="" disabled selected id="od-select">Choose your main skill</option>
+                        <option value="Frontend Developer" id="od-1">Frontend Developer (HTML/CSS/JS/React)</option>
+                        <option value="Backend Developer" id="od-2">Backend Developer (Node.js/Python/PHP)</option>
+                        <option value="Full-Stack Developer" id="od-3">Full-Stack Developer</option>
+                        <option value="UI/UX Designer" id="od-4">UI/UX Designer</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="dev-portfolio" id="ld-port">Portfolio / GitHub Link *</label>
+                    <input type="url" id="dev-portfolio" placeholder="https://example.com or GitHub link" required>
+                </div>
+                <button type="submit" class="btn btn-alt" style="width: 100%; margin-top: 10px;" id="dev-btn">Apply Now</button>
+            </form>
+        </div>
+    </section>
+    <a href="https://wa.me/923290725117" class="float-whatsapp" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+      </a>
+    <footer>
+        <p id="footer-text">© 2026 Web Development Agency. All rights reserved.</p>
+       <a href="mh8183162@gmail.com">mh8183162@gmail.com</a>      
+    </footer>
+
+    <script>
+        let currentLang = 'en';
+        let activeGateway = '';
+
+        // --- GLOBAL PHONE/WHATSAPP NUMBER CONFIGURATION ---
+        const MY_PHONE_NUMBER = "03290725117"; 
+        const MY_WHATSAPP_NUMBER = "923290725117"; 
+
+        // Real Raw Logo links for EasyPaisa and JazzCash
+        const logoUrls = {
+            easypaisa: 'https://upload.wikimedia.org/wikipedia/commons/b/ba/Easypaisa-logo.png',
+            jazzcash: 'https://upload.wikimedia.org/wikipedia/commons/2/25/JazzCash_Logo.png'
+        };
+
+        const translations = {
+            en: {
+                logo: '<span class="logo-icon">🌐</span>Web <span>Development</span>',
+                navHome: 'Home', navAbout: 'About Agency', navServices: 'Services', navTeam: 'Our Team', navOrder: 'Place Order', navPayNav: 'Online Payment', navJoin: 'Join Us',
+                heroTitle: 'We Build <span>Premium</span> Websites For Your Business',
+                heroDesc: 'We bring your brand into the digital world. Custom web development services with clean code, fast loading speeds, and excellent UI/UX.',
+                heroBtn: 'Order Now',
+                aboutTitle: 'About Our Agency', aboutSub1: 'Who We Are',
+                aboutP1: 'We are a modern web development agency that helps businesses and startups grow online.',
+                aboutSub2: 'Our Core Features',
+                aboutF1: '⚡ Super Fast Loading: Optimized code to ensure your website loads instantly.',
+                aboutF2: '📱 100% Responsive: Flawless layout and design on Mobile and Tablet screens.',
+                aboutF3: '🔒 Secure & Safe: Development according to modern security standards.',
+                servicesTitle: 'Our Services',
+                s1Title: 'Custom Web Development', s1Desc: 'Tailored high-performance websites built using HTML, CSS, JavaScript, or React.',
+                s2Title: 'E-Commerce Stores', s2Desc: 'Beautiful online shops integrated with secure payment gateways.',
+                s3Title: 'Website Maintenance', s3Desc: 'Our responsibility is redesigning old websites and boosting load speeds.',
+                
+                // Team Translations En
+                teamTitle: 'Our Expert Team',
+                tm1Role: 'CTO & System Architect', tm1Desc: 'Handles cloud environments, systems orchestration, and core Next.js/React technical roadmaps with extreme performance guarantees.',
+                tm2Role: 'Senior Full-Stack Engineer', tm2Desc: 'Builds bulletproof REST APIs, secured customer endpoints, local JSON session tools, and database relational architectures.',
+                tm3Role: 'Lead UI/UX Designer', tm3Desc: 'Sculpts stunning custom color palettes, minimalist typography hierarchies, fluid micro-interactions, and high-fidelity mockups.',
+                tm4Role: 'Database & DevOps Specialist', tm4Desc: 'Oversees database performance triggers, custom security rulesets, Dockerized deployment states, and automated code testing pipelines.',
+                tm5Role: 'Frontend & SEO Architect', tm5Desc: 'Optimizes responsive touch layouts, image compressions, tag configurations, and delivers flawless PageSpeed score rankings.',
+
+                orderTitle: 'Online Order Form', lName: 'Full Name *', lEmail: 'Email Address *', lPhone: 'WhatsApp Number *', lService: 'Select Service *',
+                optSelect: 'Select a service', opt1: 'Custom Web Development', opt2: 'E-Commerce Online Store', opt3: 'Website Maintenance',
+                placeholderName: 'Enter your full name', placeholderEmail: 'Enter your email address', placeholderDetails: 'What features do you need in your website? Type details here...',
+                lDetails: 'Project Details / Requirements *', orderBtn: 'Submit Order', lOrderShot: 'Attach Project Reference Screenshot (Optional)',
+                
+                pSecTitle: 'Quick Online Payment',
+                pSecDesc: 'Select your preferred instant gateway to clear invoices or advance project payments.',
+                cardH: 'Credit / Debit Card', cardP: 'Pay securely using your Visa, MasterCard, or UnionPay instantly.', cardB: 'Pay with Card',
+                mobileH: 'EasyPaisa / JazzCash', mobileP: 'Quick mobile wallet checkout via registered Pakistan mobile accounts.', mobileB: 'Pay with Mobile Wallet',
+                bankH: 'Direct Bank Transfer', bankP: 'Wire payment directly into our official corporate local bank account.', bankB: 'Pay with Bank',
+
+                devTitle: 'Join As Developer', devDesc: 'Become part of our team! Submit your professional details below.',
+                ldName: 'Your Name *', ldCnic: 'CNIC Number *', ldEmail: 'Email *', ldSkills: 'Primary Skills *',
+                odSelect: 'Choose your main skill', od1: 'Frontend Developer (HTML/CSS/JS/React)', od2: 'Backend Developer (Node.js/Python/PHP)', od3: 'Full-Stack Developer', od4: 'UI/UX Designer',
+                placeholderDevName: 'Enter your full name', placeholderDevEmail: 'Enter your active email address', placeholderDevPort: 'https://example.com or GitHub link',
+                ldPort: 'Portfolio / GitHub Link *', devBtn: 'Apply Now',
+                footerText: '© 2026 Web Development Agency. All rights reserved.',
+                toggleBtn: 'اردو',
+                alertOrder: 'Thank you! Redirecting your order to WhatsApp...',
+                alertDev: 'Redirecting your developer profile data to WhatsApp...',
+
+                // Gateway Strings
+                payConfirm: 'Confirm Payment', payCancel: 'Cancel',
+                cardTitle: 'Credit/Debit Card Secure Terminal', walletTitle: 'EasyPaisa / JazzCash Gateway', bankTitle: 'Official Bank Instructions',
+                lUploadShot: 'Upload Payment Proof Screenshot *'
+            },
+            ur: {
+                logo: '<span class="logo-icon">🌐</span>ویب <span>ڈویلپمنٹ</span>',
+                navHome: 'ہوم', navAbout: 'ایجنسی کے بارے میں', navServices: 'سروسز', navTeam: 'ہماری ٹیم', navOrder: 'آرڈر دیں', navPayNav: 'آن لائن ادائیگی', navJoin: 'ٹیم جوائن کریں',
+                heroTitle: 'ہم آپ کے کاروبار کے لیے <span>پریمیم</span> ویب سائٹس بناتے ہیں',
+                heroDesc: 'ہم آپ کے برانڈ کو ڈیجیٹل دنیا میں لاتے ہیں۔ کلین کوڈ، تیز رفتار، اور بہترین UI/UX کے ساتھ کسٹم ویب ڈویلپمنٹ سروسز۔',
+                heroBtn: 'ابھی آرڈر کریں',
+                aboutTitle: 'ہماری ایجنسی کے بارے میں', aboutSub1: 'ہم کون ہیں؟',
+                aboutP1: 'ہم ایک جدید ویب ڈویلپمنٹ ایجنسی ہیں جو کاروباروں اور اسٹارٹ اپس کو آن لائن ترقی کرنے میں مدد کرتی ہے۔',
+                aboutSub2: 'ہماری خصوصیات',
+                aboutF1: '⚡ تیز رفتار لوڈنگ: آپٹمائزڈ کوڈ تاکہ ویب سائٹ فوراً کھلے۔',
+                aboutF2: '📱 100٪ ریسپونسیو: موبائل اور ٹیبلٹ پر بہترین چلنے والا ڈیزائن۔',
+                aboutF3: '🔒 محفوظ اور مامون: جدید سیکیورٹی کے معیار کے مطابق ڈویلپمنٹ۔',
+                servicesTitle: 'ہماری سروسز',
+                s1Title: 'کسٹم ویب ڈویلپمنٹ', s1Desc: 'آپ کی ضرورت کے مطابق HTML، CSS، JavaScript یا React پر بنی جدید ویب سائٹس۔',
+                s2Title: 'ای کامرس اسٹورز', s2Desc: 'آن لائن سامان بیچنے کے لیے محفوظ پیمنٹ گیٹ ویز کے ساتھ بہترین آن لائن شاپس۔',
+                s3Title: 'ویب سائٹ مینٹیننس', s3Desc: 'پرانی ویب سائٹ کو جدید ڈیزائن دینا اور سپیڈ بڑھانا ہماری ضرورت ہے۔',
+                
+                // Team Translations Ur
+                teamTitle: 'ہماری ماہر ٹیم',
+                tm1Role: 'سی ٹی او اور سسٹم آرکیٹیکٹ', tm1Desc: 'کلاؤڈ انوائرنمنٹس، سسٹم آرکسٹریشن، اور نیکسٹ جے ایس/ریاکٹ روڈ میپس کو بہترین کارکردگی کے ساتھ ہینڈل کرتے ہیں۔',
+                tm2Role: 'سینیئر فل اسٹیک انجینئر', tm2Desc: 'محفوظ اور بہترین REST APIs، کسٹمر اینڈ پوائنٹس، لوکل JSON سیشنز اور ڈیٹا بیس اسٹرکچر بناتے ہیں۔',
+                tm3Role: 'لیڈ UI/UX ڈیزائنر', tm3Desc: 'خوبصورت کلر پیلیٹس، منیملسٹ ٹائپوگرافی، مائیکرو انٹرایکشنز اور ہائی فیڈلٹی موک اپس ڈیزائن کرتے ہیں۔',
+                tm4Role: 'ڈیٹا بیس اور ڈیواپس اسپیشلسٹ', tm4Desc: 'ڈیٹا بیس پرفارمنس ٹرگرز، کسٹم سیکیورٹی رولز، ڈوکرائزڈ ڈپلائیمنٹ اور خودکار ٹیسٹنگ پائپ لائنز کی نگرانی کرتے ہیں۔',
+                tm5Role: 'فرنٹ اینڈ اور ایس ای او آرکیٹیکٹ', tm5Desc: 'ریسپونسیو ٹچ لے آؤٹس، امیج کمپریشن، ٹیگ کنفیگریشن اور گوگل پیج اسپیڈ اسکور کو بہتر بناتے ہیں۔',
+
+                orderTitle: 'Online آرڈر فارم', lName: 'پورا نام *', lEmail: 'ای میل ایڈریس *', lPhone: 'واٹس ایپ نمبر *', lService: 'سروس منتخب کریں *',
+                optSelect: 'سروس سلیکٹ کریں', opt1: 'کسٹم ویب ڈویلپمنٹ', opt2: 'ای کامرس آن لائن اسٹور', opt3: 'ویب سائٹ مینٹیننس',
+                placeholderName: 'اپنا پورا نام لکھیں', placeholderEmail: 'اپنا ای میل ایڈریس درج کریں', placeholderDetails: 'آپ کو ویب سائٹ میں کیا کیا چاہیے؟ تفصیلات یہاں لکھیں...',
+                lDetails: 'پروجیکٹ کی تفصیلات / ضروریات *', orderBtn: 'آرڈر جمع کروائیں', lOrderShot: 'پروجیکٹ کا حوالہ یا اسکرین شاٹ منسلک کریں (اختیاری)',
+                
+                pSecTitle: 'فوری آن لائن ادائیگی',
+                pSecDesc: 'انوائسز کلیئر کرنے یا پروجیکٹ ایڈوانس پیمنٹ جمع کروانے کے لیے اپنا پسندیدہ گیٹ وے منتخب کریں۔',
+                cardH: 'کریڈٹ / ڈیبٹ کارڈ', cardP: 'اپنے ویزا، ماسٹر کارڈ، یا یونین پے کا استعمال کرتے ہوئے فوری محفوظ ادائیگی کریں۔', cardB: 'کارڈ سے ادائیگی کریں',
+                mobileH: 'ایزی پیسہ / جاز کیش', mobileP: 'پاکستان میں رجسٹرڈ موبائل والٹس کے ذریعے فوری اور آسان checkout۔', mobileB: 'موبائل والٹ سے پے کریں',
+                bankH: 'ڈائریکٹ بینک ٹرانسفر', bankP: 'رقم براہ راست ہمارے آفیشل کارپوریٹ مقامی بینک اکاؤنٹ میں منتقل کریں۔', bankB: 'بینک سے پے کریں',
+
+                devTitle: 'ڈویلپر بن کر شامل ہوں', devDesc: 'ہماری ٹیم کا حصہ بنیں! اپنی تفصیلات نیچے جمع کروائیں۔',
+                ldName: 'آپ کا نام *', ldCnic: 'شناختی کارڈ نمبر (CNIC) *', ldEmail: 'ای میل *', ldSkills: 'بنیادی مہارتیں (Skills) *',
+                odSelect: 'اپنا اہم ہنر منتخب کریں', od1: 'فرنٹ END ڈویلپر (HTML/CSS/JS/React)', od2: 'بیک اینڈ ڈویلپر (Node.js/Python/PHP)', od3: 'فل اسٹیک ڈویلپر', od4: 'UI/UX ڈیزائنر',
+                placeholderDevName: 'اپنا پورا نام درج کریں', placeholderDevEmail: 'اپنا ایکٹو ای میل لکھیں', placeholderDevPort: 'ویب سائٹ یا گٹ ہب کا لنک درج کریں',
+                ldPort: 'پورٹ فولیو / گٹ ہب لنک *', devBtn: 'ابھی اپلائی کریں',
+                footerText: '© 2026 ویب ڈویلپمنٹ ایجنسی۔ جملہ حقوق محفوظ ہیں۔',
+                toggleBtn: 'English',
+                alertOrder: 'شکریہ! آپ کا ڈیٹا واٹس ایپ پر ری ڈائریکٹ کیا جا رہا ہے...',
+                alertDev: 'ڈویلپر پروفائل کا ڈیٹا واٹس ایپ پر منتقل کیا جا رہا ہے...',
+
+                payConfirm: 'ادائیگی کی تصدیق کریں', payCancel: 'منسوخ کریں',
+                cardTitle: 'محفوظ کارڈ پیمنٹ ٹرمینل', walletTitle: 'ایزی پیسہ / جاز کیش گیٹ وے', bankTitle: 'آفیشل بینک اکاؤنٹ تفصیلات',
+                lUploadShot: 'ادائیگی کی رسید کا اسکرین شاٹ اپ لوڈ کریں *'
+            }
+        };
+
+        // Automatic CNIC Dash Formatting (XXXXX-XXXXXXX-X)
+        function formatCNIC(input) {
+            let value = input.value.replace(/\D/g, ''); // Remove non-digits
+            let formatted = '';
+            
+            if (value.length > 0) {
+                formatted += value.substr(0, 5);
+            }
+            if (value.length > 5) {
+                formatted += '-' + value.substr(5, 7);
+            }
+            if (value.length > 12) {
+                formatted += '-' + value.substr(12, 1);
+            }
+            
+            input.value = formatted;
+        }
+
+        function toggleLanguage() {
+            currentLang = currentLang === 'en' ? 'ur' : 'en';
+            const lang = translations[currentLang];
+            
+            document.body.classList.toggle('rtl', currentLang === 'ur');
+
+            document.getElementById('logo-text').innerHTML = lang.logo;
+            document.getElementById('nav-home').innerText = lang.navHome;
+            document.getElementById('nav-about').innerText = lang.navAbout;
+            document.getElementById('nav-services').innerText = lang.navServices;
+            document.getElementById('nav-team').innerText = lang.navTeam;
+            document.getElementById('nav-order').innerText = lang.navOrder;
+            document.getElementById('nav-pay-nav').innerText = lang.navPayNav;
+            document.getElementById('nav-join').innerText = lang.navJoin;
+            document.getElementById('lang-toggle').innerText = lang.toggleBtn;
+
+            document.getElementById('hero-title').innerHTML = lang.heroTitle;
+            document.getElementById('hero-desc').innerText = lang.heroDesc;
+            document.getElementById('hero-btn').innerText = lang.heroBtn;
+
+            document.getElementById('about-title').innerText = lang.aboutTitle;
+            document.getElementById('about-sub1').innerText = lang.aboutSub1;
+            document.getElementById('about-p1').innerText = lang.aboutP1;
+            document.getElementById('about-sub2').innerText = lang.aboutSub2;
+            document.getElementById('about-f1').innerText = lang.aboutF1;
+            document.getElementById('about-f2').innerText = lang.aboutF2;
+            document.getElementById('about-f3').innerText = lang.aboutF3;
+
+            document.getElementById('services-title').innerText = lang.servicesTitle;
+            document.getElementById('s1-title').innerText = lang.s1Title;
+            document.getElementById('s1-desc').innerText = lang.s1Desc;
+            document.getElementById('s2-title').innerText = lang.s2Title;
+            document.getElementById('s2-desc').innerText = lang.s2Desc;
+            document.getElementById('s3-title').innerText = lang.s3Title;
+            document.getElementById('s3-desc').innerText = lang.s3Desc;
+
+            // Update Team Section Language Texts Dynamically
+            document.getElementById('team-title').innerText = lang.teamTitle;
+            document.getElementById('tm1-role').innerText = lang.tm1Role;
+            document.getElementById('tm1-desc').innerText = lang.tm1Desc;
+            document.getElementById('tm2-role').innerText = lang.tm2Role;
+            document.getElementById('tm2-desc').innerText = lang.tm2Desc;
+            document.getElementById('tm3-role').innerText = lang.tm3Role;
+            document.getElementById('tm3-desc').innerText = lang.tm3Desc;
+            document.getElementById('tm4-role').innerText = lang.tm4Role;
+            document.getElementById('tm4-desc').innerText = lang.tm4Desc;
+            document.getElementById('tm5-role').innerText = lang.tm5Role;
+            document.getElementById('tm5-desc').innerText = lang.tm5Desc;
+
+            document.getElementById('order-title').innerText = lang.orderTitle;
+            document.getElementById('l-name').innerText = lang.lName;
+            document.getElementById('name').placeholder = lang.placeholderName;
+            document.getElementById('l-email').innerText = lang.lEmail;
+            document.getElementById('email').placeholder = lang.placeholderEmail;
+            document.getElementById('l-phone').innerText = lang.lPhone;
+            document.getElementById('l-service').innerText = lang.lService;
+            document.getElementById('opt-select').innerText = lang.optSelect;
+            document.getElementById('opt-1').innerText = lang.opt1;
+            document.getElementById('opt-2').innerText = lang.opt2;
+            document.getElementById('opt-3').innerText = lang.opt3;
+            document.getElementById('l-details').innerText = lang.lDetails;
+            document.getElementById('details').placeholder = lang.placeholderDetails;
+            document.getElementById('l-order-shot').innerText = lang.lOrderShot;
+            document.getElementById('order-btn').innerText = lang.orderBtn;
+            
+            document.getElementById('whatsapp').placeholder = currentLang === 'en' ? `e.g. ${MY_PHONE_NUMBER}` : `مثال کے طور پر ${MY_PHONE_NUMBER}`;
+
+            document.getElementById('p-sec-title').innerText = lang.pSecTitle;
+            document.getElementById('p-sec-desc').innerText = lang.pSecDesc;
+            document.getElementById('card-h').innerText = lang.cardH;
+            document.getElementById('card-p').innerText = lang.cardP;
+            document.getElementById('card-b').innerText = lang.cardB;
+            document.getElementById('mobile-h').innerText = lang.mobileH;
+            document.getElementById('mobile-p').innerText = lang.mobileP;
+            document.getElementById('mobile-b').innerText = lang.mobileB;
+            document.getElementById('bank-h').innerText = lang.bankH;
+            document.getElementById('bank-p').innerText = lang.bankP;
+            document.getElementById('bank-b').innerText = lang.bankB;
+
+            document.getElementById('dev-title').innerText = lang.devTitle;
+            document.getElementById('dev-desc').innerText = lang.devDesc;
+            document.getElementById('ld-name').innerText = lang.ldName;
+            document.getElementById('ld-cnic').innerText = lang.ldCnic;
+            document.getElementById('dev-name').placeholder = lang.placeholderDevName;
+            document.getElementById('ld-email').innerText = lang.ldEmail;
+            document.getElementById('dev-email').placeholder = lang.placeholderDevEmail;
+            document.getElementById('ld-skills').innerText = lang.ldSkills;
+            document.getElementById('od-select').innerText = lang.odSelect;
+            document.getElementById('od-1').innerText = lang.od1;
+            document.getElementById('od-2').innerText = lang.od2;
+            document.getElementById('od-3').innerText = lang.od3;
+            document.getElementById('od-4').innerText = lang.od4;
+            document.getElementById('ld-port').innerText = lang.ldPort;
+            document.getElementById('dev-portfolio').placeholder = lang.placeholderDevPort;
+            document.getElementById('dev-btn').innerText = lang.devBtn;
+            
+            document.getElementById('footer-text').innerText = lang.footerText;
+            
+            if(document.getElementById('js-payment-modal').style.display === 'flex') {
+                document.getElementById('modal-confirm-btn').innerText = lang.payConfirm;
+                document.getElementById('modal-cancel-btn').innerText = lang.payCancel;
+                if(activeGateway === 'card') document.getElementById('modal-title-text').innerText = lang.cardTitle;
+                if(activeGateway === 'wallet') document.getElementById('modal-title-text').innerText = lang.walletTitle;
+                if(activeGateway === 'bank') document.getElementById('modal-title-text').innerText = lang.bankTitle;
+                
+                let shotLabel = document.getElementById('lbl-upload-shot');
+                if(shotLabel) shotLabel.innerText = lang.lUploadShot;
+            }
+        }
+
+        // --- WHATSAPP REDIRECTION FOR ORDER FORM ---
+        function handleOrderSubmit(event) {
+            event.preventDefault();
+            alert(translations[currentLang].alertOrder);
+            
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const clientWhatsapp = document.getElementById('whatsapp').value;
+            const service = document.getElementById('service-type').value;
+            const details = document.getElementById('details').value;
+
+            let textMessage = `*✨ NEW CLIENT ORDER RECEIVED ✨*\n\n` +
+                              `👤 *Name:* ${name}\n` +
+                              `📧 *Email:* ${email}\n` +
+                              `📞 *WhatsApp:* ${clientWhatsapp}\n` +
+                              `🛠️ *Service Selected:* ${service}\n\n` +
+                              `📝 *Project Details:* \n${details}\n\n` +
+                              `--- _Sent via Web Application Form_ ---`;
+
+            let encodedMessage = encodeURIComponent(textMessage);
+            let whatsappUrl = `https://api.whatsapp.com/send?phone=${MY_WHATSAPP_NUMBER}&text=${encodedMessage}`;
+            
+            window.open(whatsappUrl, '_blank');
+            document.getElementById('client-form').reset();
+        }
+
+        // --- WHATSAPP REDIRECTION FOR DEVELOPER FORM ---
+        function handleDevSubmit(event) {
+            event.preventDefault();
+            alert(translations[currentLang].alertDev);
+
+            const devName = document.getElementById('dev-name').value;
+            const devCnic = document.getElementById('dev-cnic').value;
+            const devEmail = document.getElementById('dev-email').value;
+            const devSkills = document.getElementById('dev-skills').value;
+            const devPortfolio = document.getElementById('dev-portfolio').value;
+
+            let textMessage = `*🚀 DEVELOPER APPLICATION SUBMITTED 🚀*\n\n` +
+                              `👤 *Full Name:* ${devName}\n` +
+                              `🆔 *CNIC Number:* ${devCnic}\n` +
+                              `📧 *Email Address:* ${devEmail}\n` +
+                              `⚡ *Primary Skill:* ${devSkills}\n` +
+                              `🔗 *Portfolio / GitHub:* ${devPortfolio}\n\n` +
+                              `--- _Sent via Developer Portal_ ---`;
+
+            let encodedMessage = encodeURIComponent(textMessage);
+            let whatsappUrl = `https://api.whatsapp.com/send?phone=${MY_WHATSAPP_NUMBER}&text=${encodedMessage}`;
+
+            window.open(whatsappUrl, '_blank');
+            document.getElementById('dev-form').reset();
+        }
+
+        // --- JavaScript Payment Engine Core Logic ---
+        function openPaymentGateway(type) {
+            activeGateway = type;
+            const modal = document.getElementById('js-payment-modal');
+            const fieldsContainer = document.getElementById('dynamic-modal-fields');
+            const titleText = document.getElementById('modal-title-text');
+            const lang = translations[currentLang];
+
+            document.getElementById('modal-confirm-btn').innerText = lang.payConfirm;
+            document.getElementById('modal-cancel-btn').innerText = lang.payCancel;
+            fieldsContainer.innerHTML = ''; 
+
+            let amountHtml = `
+                <div class="form-group">
+                    <label>${currentLang === 'en' ? 'Enter Amount (PKR) *' : 'رقم درج کریں (PKR) *'}</label>
+                    <input type="number" min="500" placeholder="e.g. 5000" required id="js-main-amount" oninput="updateLiveAmount(this.value)">
+                </div>
+                <div class="price-summary-panel">
+                    <div class="price-line total">
+                        <span>${currentLang === 'en' ? 'Base Amount to Pay:' : 'قابل ادائیگی رقم:'}</span>
+                        <span>Rs. <span id="summary-total">0</span></span>
+                    </div>
+                </div>
+            `;
+
+            let screenshotUploadHtml = `
+                <div class="form-group">
+                    <label id="lbl-upload-shot">${lang.lUploadShot || 'Upload Payment Proof Screenshot *'}</label>
+                    <input type="file" id="js-payment-screenshot" accept="image/*" required>
+                </div>
+            `;
+
+            if (type === 'card') {
+                titleText.innerText = lang.cardTitle;
+                fieldsContainer.innerHTML = amountHtml + `
+                    <div class="form-group">
+                        <label>${currentLang === 'en' ? 'Cardholder Name' : 'کارڈ ہولڈر کا نام'}</label>
+                        <input type="text" placeholder="John Doe" required id="js-card-name">
+                    </div>
+                    <div class="form-group">
+                        <label>${currentLang === 'en' ? 'Card Number' : 'کارڈ نمبر'}</label>
+                        <input type="text" maxlength="16" placeholder="1234 5678 9101 1121" required id="js-card-num">
+                    </div>
+                    <div style="display: flex; gap: 15px;">
+                        <div class="form-group" style="flex: 1;">
+                            <label>${currentLang === 'en' ? 'Expiry Date' : 'آخری تاریخ (MM/YY)'}</label>
+                            <input type="text" placeholder="MM/YY" maxlength="5" required>
+                        </div>
+                        <div class="form-group" style="flex: 1;">
+                            <label>CVV / CVC</label>
+                            <input type="password" placeholder="123" maxlength="3" required>
+                        </div>
+                    </div>
+                `;
+            } else if (type === 'wallet') {
+                titleText.innerText = lang.walletTitle;
+                fieldsContainer.innerHTML = `
+                    <div class="wallet-logo-container">
+                        <img id="dynamic-wallet-logo" src="${logoUrls.easypaisa}" class="wallet-logo-img" alt="Wallet Brand">
+                    </div>
+                ` + amountHtml + `
+                    <div class="form-group">
+                        <label>${currentLang === 'en' ? 'Select Mobile Wallet Provider' : 'موبائل والٹ فراہم کنندہ منتخب کریں'}</label>
+                        <select required id="wallet-provider-select" onchange="updateWalletLogo(this.value)">
+                            <option value="easypaisa">EasyPaisa</option>
+                            <option value="jazzcash">JazzCash</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>${currentLang === 'en' ? 'Account Holder Name / Payment Name' : 'اکاؤنٹ ہولڈر کا نام / ادائیگی کا نام'}</label>
+                        <input type="text" placeholder="${currentLang === 'en' ? 'Enter registered full name' : 'رجسٹرڈ پورا نام لکھیں'}" required id="js-wallet-name">
+                    </div>
+                    <div class="form-group">
+                        <label>${currentLang === 'en' ? 'Mobile Account Number' : 'موبائل اکاؤنٹ نمبر'}</label>
+                        <input type="tel" placeholder="e.g. 03001234567" maxlength="11" required id="js-wallet-phone">
+                    </div>
+                    ` + screenshotUploadHtml + `
+                    <p style="font-size: 13px; color: var(--text-muted); margin-top: -10px;">
+                        ${currentLang === 'en' ? 'Please upload the confirmation screenshot after completing the wallet transaction.' : 'موبائل والٹ ٹرانزیکشن مکمل کرنے کے بعد تصدیقی اسکرین شاٹ لازمی اپ لوڈ کریں۔'}
+                    </p>
+                `;
+            } else if (type === 'bank') {
+                titleText.innerText = lang.bankTitle;
+                fieldsContainer.innerHTML = amountHtml + `
+                    <div style="background: rgba(255,255,255,0.05); padding: 15px; border-radius: 8px; font-size: 15px; border: 1px dashed var(--accent-color); line-height: 1.8;">
+                        <strong>Bank:</strong> Allied Bank Limited (ABL)<br>
+                        <strong>Account Title:</strong> Premium Web Solutions Agency<br>
+                        <strong>Account Number:</strong> 001004587965012<br>
+                        <strong>IBAN:</strong> PK72ALLB001004587965012
+                    </div>
+                    <div class="form-group" style="margin-top: 15px;">
+                        <label>${currentLang === 'en' ? 'Transaction ID / Reference Number' : 'ٹرانزیکشن ID / حوالہ نمبر'}</label>
+                        <input type="text" placeholder="TXN123456789" required id="js-bank-ref">
+                    </div>
+                ` + screenshotUploadHtml;
+            }
+
+            modal.style.display = 'flex';
+        }
+
+        // Live calculation engine display trigger
+        function updateLiveAmount(val) {
+            const amount = parseFloat(val) || 0;
+            document.getElementById('summary-total').innerText = amount.toLocaleString();
+        }
+
+        function updateWalletLogo(providerValue) {
+            const logoImg = document.getElementById('dynamic-wallet-logo');
+            if (logoImg && logoUrls[providerValue]) {
+                logoImg.style.transform = 'scale(0.8)';
+                setTimeout(() => {
+                    logoImg.src = logoUrls[providerValue];
+                    logoImg.style.transform = 'scale(1)';
+                }, 150);
+            }
+        }
+
+        function closePaymentGateway() {
+            document.getElementById('js-payment-modal').style.display = 'none';
+            document.getElementById('gateway-form').reset();
+        }
+
+        function processJavaScriptPayment(event) {
+            event.preventDefault();
+            const btn = document.getElementById('modal-confirm-btn');
+            const finalPayable = document.getElementById('summary-total').innerText;
+            
+            btn.disabled = true;
+            btn.innerText = currentLang === 'en' ? 'Processing Transaction...' : 'ادائیگی پروسیس ہو رہی ہے...';
+
+            setTimeout(() => {
+                const message = currentLang === 'en' 
+                    ? `Invoice Secured! Payment of Rs. ${finalPayable} with attached screenshot received successfully.` 
+                    : `ادائیگی کامیابی کے ساتھ مکمل ہو گئی ہے! آپ کی رقم Rs. ${finalPayable} اور منسلک کردہ اسکرین شاٹ موصول ہو چکا ہے۔`;
+                
+                alert(message);
+                btn.disabled = false;
+                closePaymentGateway();
+            }, 2000);
+        }
+    </script>
+</body>
+</html>
